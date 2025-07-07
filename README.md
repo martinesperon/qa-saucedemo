@@ -8,10 +8,10 @@ Se automatiza el login en [https://www.saucedemo.com](https://www.saucedemo.com)
 
 ## Tecnologías usadas:
 
--Python
--Selenium
--Prueba de PyTest
--Pruebas basadas en datos con archivos CSV
+- Python
+- Selenium
+- Prueba de PyTest
+- Pruebas basadas en datos con archivos CSV
 
 ## Estructura de archivos:
 
