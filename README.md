@@ -4,7 +4,11 @@ Este es un proyecto de automatización de pruebas con Python, Selenium y PyTest.
 
 ## ¿Qué se prueba?
 
-Se automatiza el login en [https://www.saucedemo.com](https://www.saucedemo.com) con diferentes usuarios, validando tanto accesos exitosos como fallidos.
+1. Login con distintos usuarios (positivos y negativos).
+2. Agregado de productos al carrito desde la página de inventario.
+3. Verificación del contenido del carrito:
+   - Validación de nombres de productos.
+   - Validación de cantidad de ítems agregados.
 
 ## Tecnologías usadas:
 
@@ -16,8 +20,11 @@ Se automatiza el login en [https://www.saucedemo.com](https://www.saucedemo.com)
 ## Estructura de archivos:
 
 - `data/users.csv`: usuarios de prueba
-- `pages/login_page.py`: lógica del Page Object Model (POM)
-- `tests/test_login.py`: casos de prueba
+- `pages/login_page.py`: lógica del Page Object Model (POM) para login
+- `pages/inventory_page.py`: lógica para agregar productos al carrito
+- `pages/cart_page.py`: lógica para validar el carrito
+- `tests/test_login.py`: casos de prueba de login
+- `tests/test_cart.py`: casos de prueba de carrito
 - `conftest.py`: configuración general (browser setup)
 
 ## Capturas automáticas:
@@ -38,7 +45,6 @@ Se automatiza el login en [https://www.saucedemo.com](https://www.saucedemo.com)
 
 ## Posibles mejoras:
 - Automatización CI/CD (GitHub Actions)
-- Tests para otras funcionalidades del sitio
 - Generación de datos aleatorios
 
 ## Sobre mí
